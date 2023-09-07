@@ -12,7 +12,7 @@ async function main() {
       port: process.env.SERVER_PORT,
     });
 
-    server.use("/", mocks.server(server.Router()));
+    server.use("/", mocks.server(server.Router(), false, true));
 
     const result = await server.start();
     console.info(result);
