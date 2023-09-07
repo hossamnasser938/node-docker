@@ -2,6 +2,8 @@ const ronin = require("ronin-server");
 // const database = require("ronin-database");
 const mocks = require("ronin-mocks");
 
+require("dotenv").config();
+
 async function main() {
   try {
     // await database.connect(process.env.CONNECTIONSTRING);
